@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAFAFA;
+  padding: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes slideRight{
+  from{
+    background-position-x: 70000%;
+  } 
+  to{
+    background-position-x: 0;
+  }
+}
+
+#background{
+  width: 95vw;
+  height: 200px;
+
+  background-image: url('./img/background.png');
+  background-repeat: repeat-x;
+  animation: slideRight 1000s infinite linear;
+
+  position: relative;
+}
+
+#dino{
+  width: 60px;
+  height: 60px;
+  background-image: url('./img/dino.png');
+  
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.cactus{
+  width: 60px;
+  height: 60px;
+  background-image: url('./img/cactus.png');
+  position: absolute;
+  bottom: 0;
+}
+
+footer{
+  margin-top: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: #4E4E4E;
+}
